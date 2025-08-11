@@ -58,12 +58,12 @@ const Movies: React.FC<MProps> = () => {
       <input
         type="text"
         placeholder="Search for a movie..."
-        className="border-2 w-full md:w-96 border-[#E2D609] outline-none bg-transparent px-4 py-2 rounded-full text-white placeholder-gray-400"
+        className="border-2 w-full md:w-96 border-[#3809e2] outline-none bg-transparent px-4 py-2 rounded-full text-white placeholder-gray-400"
       />
 
       <select
         onChange={(event: React.ChangeEvent<HTMLSelectElement>) => setYear(Number(event.target.value))}
-        className="border-2 border-[#E2D609] outline-none bg-transparent px-4 md:px-8 py-2 mt-4 md:mt-0 rounded-full w-full md:w-auto"
+        className="border-2 border-[#3809e2] outline-none bg-transparent px-4 md:px-8 py-2 mt-4 md:mt-0 rounded-full w-full md:w-auto"
       >
         <option value="">Select Year</option>
         {
@@ -74,7 +74,7 @@ const Movies: React.FC<MProps> = () => {
       </select>
     </div>
 
-    <p className="text-[#E2D609] text-xl mb-6 mt-6">Online streaming</p>
+    <p className="text-[#3809e2] text-xl mb-6 mt-6">Online streaming</p>
     <div className="flex flex-col md:flex-row items-center justify-between">
       <h1 className="text-lg md:text-6xl font-bold">{year} {genre} Movie List</h1>
       <div className="flex flex-wrap space-x-0 md:space-x-4 mt-4 md:mt-0">
